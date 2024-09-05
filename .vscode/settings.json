@@ -7,11 +7,11 @@
         }
     ],
     "liveSassCompile.settings.includeItems": [
-        "/scss/main.scss"
+        "scss/**/*.scss"  // Отслеживаем все SCSS файлы в папке scss
     ],
     "liveSassCompile.settings.excludeList": [
-        "/node_modules/**",
-        "/.vscode/**"
+        "node_modules/**",
+        ".vscode/**"
     ],
-    "liveSassCompile.settings.generateMap": true
+    "liveSassCompile.settings.generateMap": true  // Включаем Source Maps
 }

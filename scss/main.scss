@@ -1,11 +1,12 @@
 // Переменные// Variablen
 @import 'base/variables';
+@import 'base/mixins';
 // Сброс стилей// Reset der Stile
 @import 'base/reset';
 // Стили для body// Stile für den Body
 @import 'base/global';
 // Стили для навбара// Stile für die Navigationsleiste
-@import 'components/navbar';
+@import 'components/navbar';   
 // Hero section// Hero-Abschnitt
 @import 'components/hero';
 // События// Veranstaltungen

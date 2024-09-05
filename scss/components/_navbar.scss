@@ -1,37 +1,103 @@
 // _navbar.scss
+
 .nav {
-    background-color: $primary-color;
-    padding: 1rem;
+  background-color: $background-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 50px 11px 24px;
+
+  &__part-left {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-  
-    &__logo-link {
-      color: white;
-      font-size: 1.5rem;
-      text-decoration: none;
-    }
-  
-    &__search {
-      padding: 0.5rem;
+    justify-content: flex-start;
+  }
+
+  &__part-right {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__logo-link {
+    margin-right: 40px;
+  }
+
+  &__search {
+    display: flex;
+
+    &__button {
       border: none;
-      border-radius: 5px;
+      border-radius: 0px 8px 8px 0px;
+      background: #F65858;
+      width: 42px;
+      height: 42px;
+      @include flex-center;
     }
-  
-    &__user-actions {
-      display: flex;
-  
-      a {
-        color: white;
-        text-decoration: none;
-        margin-left: 1rem;
-  
-        &--primary {
-          background-color: $secondary-color;
-          padding: 0.5rem 1rem;
-          border-radius: 5px;
+
+    &__input {
+      height: 42px;
+      border: 1px solid $border-color;
+      font-size: 16px;
+      color: #000;
+
+
+      &:nth-child(1) {
+        font-size: 16px;
+        border-radius: 8px 0px 0px 8px;
+        border-right: 0px;
+        width: 300px;
+        padding-left: 35px;
+        background-image: url('/assets/icons/finde-22x22-black.svg');
+        background-repeat: no-repeat;
+        background-position: 10px center;
+
+        &::placeholder {
+          color: #707070;
         }
+      }
+
+      &:nth-child(2) {
+        width: 254px;
+        border-radius: 0px;
+        padding: 13px 9px 13px 17px;
       }
     }
   }
-  
+
+  &__user-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+
+    button {
+      border-radius: 8px;
+      border: none;
+      background: #00798A;
+      display: flex;
+      width: 90px;
+      height: 36px;
+      padding: 8px 16px 8px 16px;
+      justify-content: center;
+      align-items: center;
+      color: #FFF;
+      font-size: 14px;
+    }
+
+    a {
+      @include flex-center;
+      color: #212121;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px;
+
+      &--primary {
+        background-color: $secondary-color;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+      }
+    }
+  }
+}

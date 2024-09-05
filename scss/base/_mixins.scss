@@ -1,0 +1,6 @@
+// Миксин для центрирования с использованием flexbox// Mixin zur Zentrierung mit Flexbox
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

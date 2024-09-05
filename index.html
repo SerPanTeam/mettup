@@ -13,13 +13,23 @@
 
     <header class="header">
         <nav class="nav">
-            <div class="nav__logo">
-                <a href="index.html" class="nav__logo-link">Meetup</a>
+            <div class="nav__part-left">
+                <div class="nav__logo">
+                    <a href="/index.html" class="nav__logo-link"><img src="/assets/images/logo.svg" alt=""></a>
+                </div>
+                <div class="nav__search">
+                    <input type="text" class="nav__search__input" placeholder="Search events">
+                    <input type="text" class="nav__search__input" placeholder="City" value="Mountain View, CA">
+                    <button class="nav__search__button"><img src="/assets/icons/finde-20x20-white.svg" alt=""></button>
+                </div>
             </div>
-            <input type="text" class="nav__search" placeholder="Search events Mountain View, CA">
-            <div class="nav__user-actions">
-                <a href="login.html" class="nav__login">Log in</a>
-                <a href="signup.html" class="nav__signup nav__signup--primary">Sign up</a>
+
+            <div class="nav__part-right">
+                <div class="nav__user-actions">
+                    <a href="login.html" class="nav__login"><img src="/assets/icons/language.svg" alt="">English</a>
+                    <a href="login.html" class="nav__login">Log in</a>
+                    <button class="nav__signup">Sign up</button>
+                </div>
             </div>
         </nav>
     </header>
