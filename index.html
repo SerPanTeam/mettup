@@ -5,21 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meetup. The people platform—Where interests become friendships</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <header>
-        <nav>
+    <!-- Навигация --><!-- Navigation -->
 
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="index.html" class="nav__logo-link">Meetup</a>
+            </div>
+            <input type="text" class="nav__search" placeholder="Search events Mountain View, CA">
+            <div class="nav__user-actions">
+                <a href="login.html" class="nav__login">Log in</a>
+                <a href="signup.html" class="nav__signup nav__signup--primary">Sign up</a>
+            </div>
         </nav>
     </header>
-    <main>
 
+    <!-- Основной контент --><!-- Hauptinhalt -->
+
+    <main>
+        <section class="hero">
+            <h1 class="hero__title">The people platform—Where interests become friendships</h1>
+            <p class="hero__description">Whatever your interest, from hiking and reading to networking and skill
+                sharing, there are thousands of people who share it on Meetup. Events are happening every day—sign up to
+                join the fun.</p>
+            <button class="hero__join-button">Join Meetup</button>
+        </section>
+
+        <section class="events">
+            <h2 class="events__title">Events near Mountain View, CA</h2>
+            <div class="events__list">
+                <!-- Карточка события --><!-- Veranstaltungskarte -->
+
+                <div class="event-card">
+                    <h3 class="event-card__title">Day Trading Idea and Strategy</h3>
+                    <p class="event-card__info">Business (5 km) | Mon, Mar 18 · 7:00 PM PDT</p>
+                    <span class="event-card__details">1 going | Free</span>
+                </div>
+                <!-- Другие карточки --><!-- Weitere Karten -->
+
+            </div>
+        </section>
     </main>
 
-    <footer>
+    <!-- Футер --><!-- Fußzeile -->
 
+    <footer class="footer">
+        <p class="footer__text">© 2024 Meetup | <a href="#" class="footer__link">Privacy Policy</a> | <a href="#"
+                class="footer__link">Terms of Service</a></p>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
