@@ -12,60 +12,70 @@
     <!-- Навигация --><!-- Navigation -->
 
     <header class="header">
-        <nav class="nav">
-            <div class="nav__part-left">
-                <div class="nav__logo">
-                    <a href="/index.html" class="nav__logo-link"><img src="/assets/images/logo.svg" alt=""></a>
+        <div class="container"> <!-- Добавляем контейнер -->
+            <nav class="nav">
+                <div class="nav__part-left">
+                    <div class="nav__logo">
+                        <a href="/index.html" class="nav__logo-link"><img src="/assets/images/logo.svg"
+                                alt="Meetup logo"></a>
+                    </div>
+                    <div class="nav__search">
+                        <input type="text" class="nav__search__input" placeholder="Search events">
+                        <input type="text" class="nav__search__input" placeholder="City" value="Mountain View, CA">
+                        <button class="nav__search__button"><img src="/assets/icons/finde-20x20-white.svg"
+                                alt="Search"></button>
+                    </div>
                 </div>
-                <div class="nav__search">
-                    <input type="text" class="nav__search__input" placeholder="Search events">
-                    <input type="text" class="nav__search__input" placeholder="City" value="Mountain View, CA">
-                    <button class="nav__search__button"><img src="/assets/icons/finde-20x20-white.svg" alt=""></button>
-                </div>
-            </div>
 
-            <div class="nav__part-right">
-                <div class="nav__user-actions">
-                    <a href="login.html" class="nav__login"><img src="/assets/icons/language.svg" alt="">English</a>
-                    <a href="login.html" class="nav__login">Log in</a>
-                    <button class="nav__signup">Sign up</button>
+                <div class="nav__part-right">
+                    <div class="nav__user-actions">
+                        <a href="login.html" class="nav__login"><img src="/assets/icons/language.svg"
+                                alt="Language">English</a>
+                        <a href="login.html" class="nav__login">Log in</a>
+                        <button class="nav__signup">Sign up</button>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
 
     <!-- Основной контент --><!-- Hauptinhalt -->
 
-    <main>
-        <section class="hero">
-            <h1 class="hero__title">The people platform—Where interests become friendships</h1>
-            <p class="hero__description">Whatever your interest, from hiking and reading to networking and skill
-                sharing, there are thousands of people who share it on Meetup. Events are happening every day—sign up to
-                join the fun.</p>
-            <button class="hero__join-button">Join Meetup</button>
-        </section>
+    <div class="container"> <!-- Добавляем контейнер -->
+        <main class="main">
+            <section class="hero">
+                <h1 class="hero__title">The people platform—Where interests become friendships</h1>
+                <p class="hero__description">Whatever your interest, from hiking and reading to networking and skill
+                    sharing, there are thousands of people who share it on Meetup. Events are happening every day—sign
+                    up to
+                    join the fun.</p>
+                <button class="hero__join-button">Join Meetup</button>
+            </section>
 
-        <section class="events">
-            <h2 class="events__title">Events near Mountain View, CA</h2>
-            <div class="events__list">
-                <!-- Карточка события --><!-- Veranstaltungskarte -->
+            <section class="events">
+                <h2 class="events__title">Events near Mountain View, CA</h2>
+                <div class="events__list">
+                    <!-- Карточка события --><!-- Veranstaltungskarte -->
 
-                <div class="event-card">
-                    <h3 class="event-card__title">Day Trading Idea and Strategy</h3>
-                    <p class="event-card__info">Business (5 km) | Mon, Mar 18 · 7:00 PM PDT</p>
-                    <span class="event-card__details">1 going | Free</span>
+                    <div class="event-card">
+                        <h3 class="event-card__title">Day Trading Idea and Strategy</h3>
+                        <p class="event-card__info">Business (5 km) | Mon, Mar 18 · 7:00 PM PDT</p>
+                        <span class="event-card__details">1 going | Free</span>
+                    </div>
+                    <!-- Другие карточки --><!-- Weitere Karten -->
+
                 </div>
-                <!-- Другие карточки --><!-- Weitere Karten -->
-
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
+    </div> <!-- Закрытие контейнера -->
 
     <!-- Футер --><!-- Fußzeile -->
 
     <footer class="footer">
-        <p class="footer__text">© 2024 Meetup | <a href="#" class="footer__link">Privacy Policy</a> | <a href="#"
-                class="footer__link">Terms of Service</a></p>
+        <div class="container"> <!-- Добавляем контейнер -->
+            <p class="footer__text">© 2024 Meetup | <a href="#" class="footer__link">Privacy Policy</a> | <a href="#"
+                    class="footer__link">Terms of Service</a></p>
+        </div>
     </footer>
 
     <script src="js/main.js"></script>

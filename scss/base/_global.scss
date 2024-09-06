@@ -8,3 +8,71 @@ body {
   button{
     cursor: pointer;
   }
+
+  .container {
+    width: 100%;
+    max-width: 1440px; /* Максимальная ширина контента */
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  /* Основные стили для десктопов */
+.container {
+  max-width: 1440px; /* Максимальная ширина для десктопов */
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+
+/* Медиазапросы для больших экранов (от 1920px) */
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1920px; /* Контейнер расширяется для больших экранов */
+  }
+}
+
+/* Медиазапросы для планшетов (от 768px до 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 100%; /* Контейнер занимает всю ширину */
+    padding: 0 15px; /* Сохраняем небольшие отступы */
+  }
+  
+  .nav__search__input {
+    width: 100%; /* Поля поиска становятся шире */
+  }
+}
+
+/* Медиазапросы для мобильных устройств (до 767px) */
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px; /* Уменьшаем отступы для мобильных */
+  }
+
+  /* Адаптация навигации */
+  .nav {
+    flex-direction: column; /* Навигация становится вертикальной */
+    align-items: center;
+  }
+
+  .nav__search__input {
+    width: 100%; /* Поля поиска занимают всю ширину */
+    margin-bottom: 10px; /* Добавляем отступы между элементами */
+  }
+
+  .nav__user-actions {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .events__list {
+    flex-direction: column; /* Карточки событий отображаются вертикально */
+  }
+
+  .event-card {
+    width: 100%; /* Карточки занимают всю ширину */
+    margin-bottom: 15px; /* Добавляем отступы между карточками */
+  }
+}
