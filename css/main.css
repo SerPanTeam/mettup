@@ -19,14 +19,14 @@ button {
   width: 100%;
   max-width: 1440px; /* Максимальная ширина контента */
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 0px;
 }
 
 /* Стили для основного контента */
 .main {
   max-width: 1196px; /* Ширина основного контента */
   margin: 0 auto; /* Центрирование */
-  padding: 0 15px; /* Отступы */
+  padding: 0 0px; /* Отступы */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -270,22 +270,82 @@ button {
   background-position: calc(100% - 10px) center;
 }
 .events__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* Сетка из карточек */
+  gap: 36px;
 }
 .events__list .event-card {
-  background-color: white;
-  padding: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: calc(33% - 1rem);
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.events__list .event-card__img {
+  width: 100%;
+  border-radius: 8px;
+  padding-bottom: 12px;
 }
 .events__list .event-card__title {
-  margin-bottom: 0.5rem;
+  color: #212121;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
 }
 .events__list .event-card__info {
-  margin-bottom: 0.5rem;
+  color: #707070;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 12px 0;
+}
+.events__list .event-card__date {
+  color: #212121;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.35px;
+  text-transform: uppercase;
+  padding-bottom: 14px;
+  display: flex;
+  align-items: center;
+  /* Выровнять иконку и текст по центру вертикально */
+}
+.events__list .event-card__date::before {
+  content: url("/assets/icons/calendar.svg");
+  padding-right: 6px;
+  height: 20px;
+  width: 20px;
+}
+.events__list .event-card__options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+.events__list .event-card__options span {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+.events__list .event-card__options span:nth-child(1)::before {
+  display: inline-block;
+  content: url("/assets/icons/done.svg");
+  padding-right: 6px;
+  height: 20px;
+  width: 20px;
+}
+.events__list .event-card__options span:nth-child(2)::before {
+  display: inline-block;
+  content: url("/assets/icons/ticket.svg");
+  padding-right: 6px;
+  height: 20px;
+  width: 20px;
 }
 
 .footer {
