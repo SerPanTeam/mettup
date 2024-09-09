@@ -1,27 +1,30 @@
 // _global.scss
 body {
-    font-family: $font-stack;
-    line-height: 1.6;
-    background-color: $background-color;
-  }
-  
-  button{
-    cursor: pointer;
-  }
+  font-family: $font-stack;
+  background-color: $background-color;
+}
 
-  .container {
-    width: 100%;
-    max-width: 1440px; /* Максимальная ширина контента */
-    margin: 0 auto;
-    padding: 0 15px;
-  }
+button {
+  cursor: pointer;
+}
 
-  /* Основные стили для десктопов */
 .container {
-  max-width: 1440px; /* Максимальная ширина для десктопов */
+  width: 100%;
+  max-width: 1440px; /* Максимальная ширина контента */
   margin: 0 auto;
   padding: 0 15px;
+}
+
+/* Стили для основного контента */
+.main {
+  max-width: 1196px; /* Ширина основного контента */
+  margin: 0 auto;    /* Центрирование */
+  padding: 0 15px;   /* Отступы */
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: flex-start;
 }
 
 /* Медиазапросы для больших экранов (от 1920px) */
@@ -35,7 +38,12 @@ body {
 @media (max-width: 1024px) {
   .container {
     max-width: 100%; /* Контейнер занимает всю ширину */
-    padding: 0 15px; /* Сохраняем небольшие отступы */
+    padding: 0 15px; /* Отступы */
+  }
+  
+  .main {
+    max-width: 100%; /* Основной контент растягивается на всю ширину */
+    padding: 0 15px;
   }
   
   .nav__search__input {
@@ -48,6 +56,11 @@ body {
   .container {
     max-width: 100%;
     padding: 0 10px; /* Уменьшаем отступы для мобильных */
+  }
+
+  .main {
+    max-width: 100%; /* Основной контент занимает всю ширину */
+    padding: 0 10px;
   }
 
   /* Адаптация навигации */
@@ -73,6 +86,6 @@ body {
 
   .event-card {
     width: 100%; /* Карточки занимают всю ширину */
-    margin-bottom: 15px; /* Добавляем отступы между карточками */
+    margin-bottom: 15px; /* Отступы между карточками */
   }
 }

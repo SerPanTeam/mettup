@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +8,6 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  line-height: 1.6;
   background-color: #FFF;
 }
 
@@ -22,12 +22,16 @@ button {
   padding: 0 15px;
 }
 
-/* Основные стили для десктопов */
-.container {
-  max-width: 1440px; /* Максимальная ширина для десктопов */
-  margin: 0 auto;
-  padding: 0 15px;
+/* Стили для основного контента */
+.main {
+  max-width: 1196px; /* Ширина основного контента */
+  margin: 0 auto; /* Центрирование */
+  padding: 0 15px; /* Отступы */
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: flex-start;
 }
 
 /* Медиазапросы для больших экранов (от 1920px) */
@@ -40,7 +44,11 @@ button {
 @media (max-width: 1024px) {
   .container {
     max-width: 100%; /* Контейнер занимает всю ширину */
-    padding: 0 15px; /* Сохраняем небольшие отступы */
+    padding: 0 15px; /* Отступы */
+  }
+  .main {
+    max-width: 100%; /* Основной контент растягивается на всю ширину */
+    padding: 0 15px;
   }
   .nav__search__input {
     width: 100%; /* Поля поиска становятся шире */
@@ -51,6 +59,10 @@ button {
   .container {
     max-width: 100%;
     padding: 0 10px; /* Уменьшаем отступы для мобильных */
+  }
+  .main {
+    max-width: 100%; /* Основной контент занимает всю ширину */
+    padding: 0 10px;
   }
   /* Адаптация навигации */
   .nav {
@@ -71,7 +83,7 @@ button {
   }
   .event-card {
     width: 100%; /* Карточки занимают всю ширину */
-    margin-bottom: 15px; /* Добавляем отступы между карточками */
+    margin-bottom: 15px; /* Отступы между карточками */
   }
 }
 .nav {
@@ -158,6 +170,7 @@ button {
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
+  text-decoration: none;
 }
 .nav__user-actions a--primary {
   background-color: #2ecc71;
@@ -167,31 +180,94 @@ button {
 
 .hero {
   text-align: center;
-  padding: 2rem;
   background-color: white;
+  display: flex;
+  padding: 98px 0 98px 0;
+  gap: 46px;
+}
+.hero__left {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 24px;
 }
 .hero__title {
-  color: #3498db;
-  margin-bottom: 1rem;
+  font-size: 42px;
+  color: #212121;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: left;
 }
 .hero__description {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
+  text-align: left;
+  color: #212121;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 .hero__join-button {
-  background-color: #2ecc71;
+  border-radius: 8px;
+  background: #00798A;
   color: white;
-  padding: 0.75rem 1.5rem;
+  font-size: 16px;
+  display: flex;
+  width: 125px;
+  height: 40px;
+  padding: 8px 16px 8px 16px;
+  justify-content: center;
+  align-items: center;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
-.events {
-  padding: 2rem;
+.events__head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 24px;
+}
+.events__head__left {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+.events__head__right__link {
+  text-decoration: none;
+  color: #00798A;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
 }
 .events__title {
-  margin-bottom: 1.5rem;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #212121;
+}
+.events__input-city {
+  border-radius: 8px;
+  background: rgba(151, 202, 209, 0.12);
+  display: flex;
+  width: 240px;
+  padding: 12px 12px 8px 12px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  color: #00798A;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  border: none;
+  background-image: url("/assets/icons/edit-input.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center;
 }
 .events__list {
   display: flex;

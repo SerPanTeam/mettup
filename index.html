@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meetup. The people platform—Where interests become friendships</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -16,22 +16,22 @@
             <nav class="nav">
                 <div class="nav__part-left">
                     <div class="nav__logo">
-                        <a href="/index.html" class="nav__logo-link"><img src="/assets/images/logo.svg"
+                        <a href="./index.html" class="nav__logo-link"><img src="./assets/images/logo.svg"
                                 alt="Meetup logo"></a>
                     </div>
                     <div class="nav__search">
                         <input type="text" class="nav__search__input" placeholder="Search events">
                         <input type="text" class="nav__search__input" placeholder="City" value="Mountain View, CA">
-                        <button class="nav__search__button"><img src="/assets/icons/finde-20x20-white.svg"
+                        <button class="nav__search__button"><img src="./assets/icons/finde-20x20-white.svg"
                                 alt="Search"></button>
                     </div>
                 </div>
 
                 <div class="nav__part-right">
                     <div class="nav__user-actions">
-                        <a href="login.html" class="nav__login"><img src="/assets/icons/language.svg"
+                        <a href="./index.html" class="nav__login"><img src="./assets/icons/language.svg"
                                 alt="Language">English</a>
-                        <a href="login.html" class="nav__login">Log in</a>
+                        <a href="./index.html" class="nav__login">Log in</a>
                         <button class="nav__signup">Sign up</button>
                     </div>
                 </div>
@@ -44,16 +44,31 @@
     <div class="container"> <!-- Добавляем контейнер -->
         <main class="main">
             <section class="hero">
-                <h1 class="hero__title">The people platform—Where interests become friendships</h1>
-                <p class="hero__description">Whatever your interest, from hiking and reading to networking and skill
-                    sharing, there are thousands of people who share it on Meetup. Events are happening every day—sign
-                    up to
-                    join the fun.</p>
-                <button class="hero__join-button">Join Meetup</button>
+                <div class="hero__left">
+                    <h1 class="hero__title">The people platform—Where interests become friendships</h1>
+                    <p class="hero__description">Whatever your interest, from hiking and reading to networking and skill
+                        sharing, there are thousands of people who share it on Meetup. Events are happening every
+                        day—sign
+                        up to
+                        join the fun.</p>
+                    <button class="hero__join-button">Join Meetup</button>
+                </div>
+                <div class="hero__right">
+                    <img src="./assets/images/hero.svg" alt="Join Meetup">
+                </div>
             </section>
 
             <section class="events">
-                <h2 class="events__title">Events near Mountain View, CA</h2>
+                <div class="events__head">
+                    <div class="events__head__left">
+                        <h2 class="events__title">Events near</h2>
+                        <input class="events__input-city" type="text" value="Mountain View, CA">
+                    </div>
+                    <div class="events__head__right">
+                        <a class="events__head__right__link" href="/">See all events</a>
+                    </div>
+
+                </div>
                 <div class="events__list">
                     <!-- Карточка события --><!-- Veranstaltungskarte -->
 
@@ -73,12 +88,13 @@
 
     <footer class="footer">
         <div class="container"> <!-- Добавляем контейнер -->
-            <p class="footer__text">© 2024 Meetup | <a href="#" class="footer__link">Privacy Policy</a> | <a href="#"
+            <p class="footer__text">© 2024 <a class="footer__link" href="./index.html">Meetup </a> | <a
+                    href="./index.html" class="footer__link">Privacy Policy</a> | <a href="./index.html"
                     class="footer__link">Terms of Service</a></p>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

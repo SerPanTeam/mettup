@@ -1,29 +1,79 @@
 .events {
-    padding: 2rem;
-  
-    &__title {
-      margin-bottom: 1.5rem;
-    }
-  
-    &__list {
+
+  &__head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 24px;
+
+    &__left {
       display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-  
-      .event-card {
-        background-color: white;
-        padding: 1rem;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        width: calc(33% - 1rem);
-  
-        &__title {
-          margin-bottom: 0.5rem;
-        }
-  
-        &__info {
-          margin-bottom: 0.5rem;
-        }
+      flex-direction: row;
+      gap: 8px;
+      align-items: center;
+    }
+
+    &__right__link {
+      text-decoration: none;
+      color: #00798A;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+    }
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+    color: #212121;
+  }
+
+  &__input-city {
+    border-radius: 8px;
+    background: rgba(151, 202, 209, 0.12);
+
+    display: flex;
+    width: 240px;
+    padding: 12px 12px 8px 12px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+
+    color: #00798A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+
+    border: none;
+
+    background-image: url('/assets/icons/edit-input.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    .event-card {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      width: calc(33% - 1rem);
+
+      &__title {
+        margin-bottom: 0.5rem;
+      }
+
+      &__info {
+        margin-bottom: 0.5rem;
       }
     }
   }
+}

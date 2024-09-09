@@ -1,26 +1,49 @@
 // _hero.scss
 .hero {
-    text-align: center;
-    padding: 2rem;
-    background-color: white;
-  
-    &__title {
-      color: $primary-color;
-      margin-bottom: 1rem;
-    }
-  
-    &__description {
-      font-size: 1.2rem;
-      margin-bottom: 1.5rem;
-    }
-  
-    &__join-button {
-      background-color: $secondary-color;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+  text-align: center;
+  background-color: white;
+  display: flex;
+  padding: 98px 0 98px 0;
+  gap: 46px;
+
+  &__left {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 24px;
   }
-  
+
+  &__title {
+    font-size: 42px;
+    color: #212121;
+    font-weight: 700;
+    line-height: 52px;
+    text-align: left;
+  }
+
+  &__description {
+    text-align: left;
+    color: #212121;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  &__join-button {
+    border-radius: 8px;
+    background: #00798A;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    width: 125px;
+    height: 40px;
+    padding: 8px 16px 8px 16px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+}
