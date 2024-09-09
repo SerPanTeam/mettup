@@ -6,20 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <script src="/js/load-partials.js"></script>
+    <script src="/js/data.js"></script>
+    <script src="/js/events.js"></script>
     <title>Meetup. The people platform—Where interests become friendships</title>
 </head>
 
 <body>
     <!-- Навигация --><!-- Navigation -->
-    <header class="header"></header>
+    <header class="header" id="header"></header>
     <script>loadPart("header");</script>
 
     <!-- Основной контент --><!-- Hauptinhalt -->
-    <main class="main"></main>
-    <script>loadPart("main");</script>
+    <main class="main" id="main"></main>
+    <script>
+        loadPart("main")
+            .then(()=>{
+        showActualEvents('events__list');
+                showActualEventsOnline('events__list__online');
+
+            })
+    </script>
 
     <!-- Футер --><!-- Fußzeile -->
-    <footer class="footer"></footer>
+    <footer class="footer" id="footer"></footer>
     <script>loadPart("footer");</script>
 
     <!-- <script src="./js/main.js"></script> -->

@@ -71,7 +71,7 @@ const eventsStore = [
         description: "Meetup for Python developers in San Francisco",
         date: new Date(2024, 9, 15, 18),
         image:
-            "https://images.unsplash.com/photo-1517430816045-df4b7de48601?q=80&w=870&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         type: "offline",
         attendees: 120,
         category: "Technology",
@@ -93,7 +93,7 @@ const eventsStore = [
         description: "A weekend of yoga, meditation, and relaxation",
         date: new Date(2024, 9, 18, 7),
         image:
-            "https://images.unsplash.com/photo-1540150758249-35951a2c0703?q=80&w=870&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         type: "offline",
         attendees: 50,
         category: "Health and Wellbeing",
@@ -113,9 +113,9 @@ const eventsStore = [
     {
         title: "Environmental Sustainability Workshop",
         description: "Learn about sustainable practices for a better environment",
-        date: new Date(2024, 9, 12, 14),
+        date: new Date(2024, 9, 13, 14),
         image:
-            "https://images.unsplash.com/photo-1555972734-d5d1b998b34a?q=80&w=870&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1515344905723-babc01aac23d?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         type: "offline",
         attendees: 80,
         category: "Health and Wellbeing",
@@ -126,7 +126,7 @@ const eventsStore = [
         description: "Compete in the latest VR games and win prizes",
         date: new Date(2024, 9, 28, 17),
         image:
-            "https://images.unsplash.com/photo-1539797554184-6343e010d1ea?q=80&w=870&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1534423861386-85a16f5d13fd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         type: "offline",
         attendees: 150,
         category: "Technology",
@@ -137,7 +137,7 @@ const eventsStore = [
         description: "Learn the basics of photography with hands-on practice",
         date: new Date(2024, 9, 19, 10),
         image:
-            "https://images.unsplash.com/photo-1504198453319-5ce911bafcde?q=80&w=870&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         type: "offline",
         attendees: 25,
         category: "Hobbies and Passions",
@@ -148,7 +148,7 @@ const eventsStore = [
         description: "Use art as a way to heal and express yourself",
         date: new Date(2024, 9, 21, 15),
         image:
-            "https://images.unsplash.com/photo-1512499617640-c2f99956cbdc?q=80&w=870&auto=format&fit=crop",
+            "https://plus.unsplash.com/premium_photo-1704974610777-93090f8a2eb4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         type: "offline",
         attendees: 70,
         category: "Health and Wellbeing",
@@ -159,7 +159,7 @@ const eventsStore = [
         description: "Compete against others in this regional chess tournament",
         date: new Date(2024, 9, 24, 10),
         image:
-            "https://images.unsplash.com/photo-1599140785966-3d2264f567f6?q=80&w=870&auto=format&fit=crop",
+            "https://plus.unsplash.com/premium_photo-1673089624442-14bc846ded76?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         type: "offline",
         attendees: 30,
         category: "Hobbies and Passions",
@@ -170,7 +170,7 @@ const eventsStore = [
         description: "Learn to code in just 12 weeks",
         date: new Date(2024, 9, 26, 11),
         image:
-            "https://images.unsplash.com/photo-1531499765818-5a6e2a599b98?q=80&w=870&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         type: "online",
         attendees: 500,
         category: "Technology",
@@ -181,7 +181,7 @@ const eventsStore = [
         description: "Overcome your fear of public speaking with this workshop",
         date: new Date(2024, 9, 27, 16),
         image:
-            "https://images.unsplash.com/photo-1559027615-8b2c36d964b4?q=80&w=870&auto=format&fit=crop",
+            "https://plus.unsplash.com/premium_photo-1705267936187-aceda1a6c1a6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         type: "offline",
         attendees: 40,
         category: "Business",
@@ -192,7 +192,7 @@ const eventsStore = [
         description: "Explore beautiful trails and improve your biking skills",
         date: new Date(2024, 9, 25, 9),
         image:
-            "https://images.unsplash.com/photo-1554136871-8d38f7e42d53?q=80&w=870&auto=format&fit=crop",
+            "https://plus.unsplash.com/premium_photo-1663100262530-7049b141cb38?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         type: "offline",
         attendees: 60,
         category: "Hobbies and Passions",
@@ -203,7 +203,7 @@ const eventsStore = [
         description: "Intensive fitness bootcamp to get in shape quickly",
         date: new Date(2024, 9, 29, 7),
         image:
-            "https://images.unsplash.com/photo-1533326039389-4f9a020a0ba6?q=80&w=870&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         type: "offline",
         attendees: 50,
         category: "Health and Wellbeing",
@@ -214,7 +214,7 @@ const eventsStore = [
         description: "Learn from successful entrepreneurs and grow your business",
         date: new Date(2024, 9, 30, 13),
         image:
-            "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=870&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1485217988980-11786ced9454?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         type: "online",
         attendees: 700,
         category: "Business",

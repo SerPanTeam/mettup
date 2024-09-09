@@ -10,10 +10,9 @@
             <button class="hero__join-button">Join Meetup</button>
         </div>
         <div class="hero__right">
-            <img src="./assets/images/hero.svg" alt="Join Meetup">
+            <img src="/assets/images/hero.svg" alt="Join Meetup">
         </div>
     </section>
-
     <section class="events">
         <div class="events__head">
             <div class="events__head__left">
@@ -23,27 +22,31 @@
             <div class="events__head__right">
                 <a class="events__head__right__link" href="/">See all events</a>
             </div>
-
         </div>
-        <div class="events__list">
+        <div class="events__list" id="events__list">
+        </div>
+    </section>
 
-            <div class="event-card">
-                <img class="event-card__img" src="/assets/images/events/1.png" alt="">
-                <h3 class="event-card__title">Day Trading Idea and Strategy</h3>
-                <p class="event-card__info">Business (5 km)</p>
-                <p class="event-card__date">Mon, Mar 18 · 7:00 PM PDT</p>
-                <div class="event-card__options">
-                    <span>1 going</span>
-                    <span>Free</span>
-                </div>
+    <section class="events">
+        <div class="events__head">
+            <div class="events__head__left">
+                <h2 class="events__title">Upcoming online events</h2>
+            </div>
+            <div class="events__head__right">
+                <a class="events__head__right__link" href="/">See all events</a>
             </div>
         </div>
-        <script src="/js/data.js"></script>
-        <script src="/js/events.js"></script>
-        <script>
-            showActualEvents('events__list');
-            console.log('object');
-        </script>
-
+        <div class="events__list" id="events__list__online">
+        </div>
     </section>
-</div> <!-- Закрытие контейнера -->
+
+    <section class="join">
+        <div class="join__content">
+            <h2 class="join__title">Join Meetup</h2>
+            <p class="join__description">
+                People use Meetup to meet new people, learn new things, find support, get out of their comfort zones, and pursue their passions, together. Membership is free.
+            </p>
+            <button class="join__button">Sign up</button>
+        </div>
+    </section>
+</div>
