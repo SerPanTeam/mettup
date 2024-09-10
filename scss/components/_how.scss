@@ -1,0 +1,12 @@
+.how{
+    display: flex;
+    flex-direction: column;
+    &__items{
+        display: flex;
+        flex-direction: row;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+    }
+}

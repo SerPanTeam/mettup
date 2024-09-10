@@ -7,7 +7,7 @@ function showCardEvent(objEvents, container) {
             `<div class="event-card">
                 <img class="event-card__img" src="${val.image}" alt="">
                 <h3 class="event-card__title">${val.title}</h3>
-                <p class="event-card__info">${val.category} (${(val.type==='online')?'online':val.distance + " km"})</p>
+                <p class="event-card__info">${val.category} (${(val.type === 'online') ? 'online' : val.distance + " km"})</p>
                 <p class="event-card__date">${formatDate(val.date)}</p>
                 <div class="event-card__options">
                     <span>${val.attendees} going</span>
@@ -20,10 +20,10 @@ function showCardEvent(objEvents, container) {
 }
 
 function showActualEvents(container) {
-    showCardEvent(eventsStore.filter(val => val.date >= Date.now()).sort((a,b)=>a.date-b.date), container);
+    showCardEvent(eventsStore.filter(val => val.date >= Date.now()).sort((a, b) => a.date - b.date), container);
 }
 function showActualEventsOnline(container) {
-    showCardEvent(eventsStore.filter(val=>val.type==='online').filter(val => val.date >= Date.now()).sort((a,b)=>a.date-b.date), container);
+    showCardEvent(eventsStore.filter(val => val.type === 'online').filter(val => val.date >= Date.now()).sort((a, b) => a.date - b.date), container);
 }
 
 function formatDate(eventDate) {

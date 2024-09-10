@@ -20,8 +20,9 @@
     <main class="main" id="main"></main>
     <script>
         loadPart("main")
-            .then(()=>{
-        showActualEvents('events__list');
+            .then(() => {
+                console.log(eventsStore);
+                showActualEvents('events__list');
                 showActualEventsOnline('events__list__online');
 
             })

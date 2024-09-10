@@ -1,0 +1,40 @@
+.categories {
+    &__title {
+        color: #212121;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 36px;
+    }
+
+    &__items {
+        border-radius: 8px;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+    }
+    
+    &__item {
+        padding: 22px 16px 16px 16px;
+        background: rgba(151, 202, 209, 0.08);
+        width: 135px;
+        height: 112px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            color: #212121;
+            text-align: center;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+        }
+    }
+
+}

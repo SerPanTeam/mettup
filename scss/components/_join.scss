@@ -1,0 +1,50 @@
+.onother_info{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+.join {
+    border-radius: 8px;
+    background-color: rgba(151, 202, 209, 0.08);
+    width: 100%;
+    padding: 20px 56px;
+    display: flex;
+    flex-direction: row;
+    gap: 74px;
+
+    &__content {
+        gap: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        color: #212121;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 36px;
+    }
+
+    &__description {
+        color: #212121;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    &__button {
+        border-radius: 8px;
+        background: #E32359;
+        display: flex;
+        width: 192px;
+        height: 40px;
+        padding: 8px 66.6px 8px 66.78px;
+        justify-content: center;
+        align-items: center;
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        border: none;
+    }
+}
