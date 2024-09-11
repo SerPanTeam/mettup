@@ -1,24 +1,41 @@
 .footer {
-    background-color: #333;
-    color: white;
-  
-    a {
-      color: white;
-      text-decoration: none;
-    }
+  background-color: #333;
+  color: white;
 
-    &__container{
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+  }
+
+  &__container {
+    &__top {
+      &__text {
+        color: #f6f7f8;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 150% */
+      }
+      &__button {
+        border-radius: 6px;
+        border: 2px solid #fff;
+      }
+    }
+    display: flex;
+    flex-direction: column;
+    &__links {
       display: flex;
-      flex-direction: column;
-      &__links{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-      }
-      &__social{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-      }
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    &__social {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
     }
   }
+}
