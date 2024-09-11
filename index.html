@@ -24,12 +24,15 @@
     <script>
       const urlParams = new URLSearchParams(window.location.search);
       const pageParam = urlParams.get("page");
-        if (pageParam==='')
-      loadPart("main").then(() => {
-        console.log(eventsStore);
-        showActualEvents("events__list");
-        showActualEventsOnline("events__list__online");
-      });
+      if (pageParam === "events") {
+        loadPart("events").then(() => {
+        });        
+      } else {
+        loadPart("main").then(() => {
+          showActualEvents("events__list");
+          showActualEventsOnline("events__list__online");
+        });
+      }
     </script>
 
     <!-- Футер --><!-- Fußzeile -->
