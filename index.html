@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
     <script src="/js/load-partials.js"></script>
     <script src="/js/data.js"></script>
     <script src="/js/events.js"></script>
-    <title>Meetup. The people platform—Where interests become friendships</title>
-</head>
+    <title>
+      Meetup. The people platform—Where interests become friendships
+    </title>
+  </head>
 
-<body>
+  <body>
     <!-- Навигация --><!-- Navigation -->
     <header class="header" id="header"></header>
-    <script>loadPart("header");</script>
+    <script>
+      loadPart("header");
+    </script>
 
     <!-- Основной контент --><!-- Hauptinhalt -->
     <main class="main" id="main"></main>
     <script>
-        loadPart("main")
-            .then(() => {
-                console.log(eventsStore);
-                showActualEvents('events__list');
-                showActualEventsOnline('events__list__online');
-
-            })
+      const urlParams = new URLSearchParams(window.location.search);
+      const pageParam = urlParams.get("page");
+        if (pageParam==='')
+      loadPart("main").then(() => {
+        console.log(eventsStore);
+        showActualEvents("events__list");
+        showActualEventsOnline("events__list__online");
+      });
     </script>
 
     <!-- Футер --><!-- Fußzeile -->
     <footer class="footer" id="footer"></footer>
-    <script>loadPart("footer");</script>
+    <script>
+      loadPart("footer");
+    </script>
 
     <!-- <script src="./js/main.js"></script> -->
-</body>
-
+  </body>
 </html>
