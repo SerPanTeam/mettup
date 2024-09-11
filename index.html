@@ -25,7 +25,7 @@
       const urlParams = new URLSearchParams(window.location.search);
       const pageParam = urlParams.get("page");
       if (pageParam === "events") {
-        loadPart("events").then(() => {
+        loadPart("events", "main").then(() => {
         });        
       } else {
         loadPart("main").then(() => {

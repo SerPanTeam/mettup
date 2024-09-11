@@ -133,9 +133,6 @@ button {
   background-repeat: no-repeat;
   background-position: 10px center;
 }
-.nav__search__input:nth-child(1)::-moz-placeholder {
-  color: #707070;
-}
 .nav__search__input:nth-child(1)::placeholder {
   color: #707070;
 }
@@ -291,8 +288,7 @@ button {
   width: 100%;
   height: 192px !important;
   /* Задаем фиксированную высоту */
-  -o-object-fit: cover !important;
-     object-fit: cover !important;
+  object-fit: cover !important;
   /* Изображение будет обрезано, чтобы сохранить пропорции */
   border-radius: 8px;
 }
@@ -438,6 +434,7 @@ button {
 .footer__container__bottom {
   display: flex;
   flex-direction: row;
+  padding-bottom: 40px;
   gap: 24px;
 }
 .footer__container__bottom-list {
