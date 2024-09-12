@@ -22,7 +22,8 @@
     &__items {
         display: flex;
         flex-direction: row;
-        gap: 42px;
+        flex-wrap: wrap;
+        gap: 37px;
         a{
             text-decoration: none;
         }
@@ -40,5 +41,8 @@
         font-style: normal;
         font-weight: 600;
         line-height: 28px;
+        img{
+            width: 100%;
+        }
     }
 }

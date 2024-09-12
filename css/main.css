@@ -21,16 +21,20 @@ button {
 
 .container {
   width: 100%;
-  max-width: 1440px; /* Максимальная ширина контента */
+  max-width: 1440px;
+  /* Максимальная ширина контента */
   margin: 0 auto;
-  padding: 0 0px;
+  padding: 0 10px;
 }
 
 /* Стили для основного контента */
 .main {
-  max-width: 1196px; /* Ширина основного контента */
-  margin: 0 auto; /* Центрирование */
-  padding: 0 0px; /* Отступы */
+  max-width: 1196px;
+  /* Ширина основного контента */
+  margin: 0 auto;
+  /* Центрирование */
+  padding: 0 0px;
+  /* Отступы */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -41,53 +45,171 @@ button {
 /* Медиазапросы для больших экранов (от 1920px) */
 @media (min-width: 1920px) {
   .container {
-    max-width: 1920px; /* Контейнер расширяется для больших экранов */
+    max-width: 1920px;
+    /* Контейнер расширяется для больших экранов */
   }
 }
 /* Медиазапросы для планшетов (от 768px до 1024px) */
 @media (max-width: 1024px) {
   .container {
-    max-width: 100%; /* Контейнер занимает всю ширину */
-    padding: 0 15px; /* Отступы */
+    max-width: 100%;
+    /* Контейнер занимает всю ширину */
+    padding: 0 15px;
+    /* Отступы */
   }
   .main {
-    max-width: 100%; /* Основной контент растягивается на всю ширину */
+    max-width: 100%;
+    /* Основной контент растягивается на всю ширину */
     padding: 0 15px;
   }
   .nav__search__input {
-    width: 100%; /* Поля поиска становятся шире */
+    width: 200px !important;
+    /* Поля поиска становятся шире */
+  }
+  .nav {
+    padding: 11px 0px 11px 0px !important;
+  }
+  .nav__search__input:nth-child(2) {
+    width: 200px;
+    /* Поля поиска становятся шире */
+  }
+}
+@media (max-width: 850px) {
+  .nav__search__input {
+    width: 150px !important;
+    /* Поля поиска становятся шире */
   }
 }
 /* Медиазапросы для мобильных устройств (до 767px) */
 @media (max-width: 767px) {
   .container {
     max-width: 100%;
-    padding: 0 10px; /* Уменьшаем отступы для мобильных */
+    padding: 0 10px;
+    /* Уменьшаем отступы для мобильных */
   }
   .main {
-    max-width: 100%; /* Основной контент занимает всю ширину */
+    max-width: 100%;
+    /* Основной контент занимает всю ширину */
     padding: 0 10px;
   }
   /* Адаптация навигации */
   .nav {
-    flex-direction: column; /* Навигация становится вертикальной */
-    align-items: center;
+    flex-direction: column-reverse !important;
+    /* Навигация становится вертикальной */
+    align-items: flex-end !important;
+    gap: 16px !important;
+  }
+  .nav__logo {
+    display: none;
+    position: relative;
+  }
+  .nav__logo__mobi {
+    display: block !important;
+  }
+  .nav__part-left {
+    width: 100%;
+  }
+  .nav__part-right {
+    width: 100%;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px !important;
+  }
+  .hero__left {
+    width: 100% !important;
+    font-size: 25px !important;
+  }
+  .hero__title {
+    font-size: 25px !important;
+    font-weight: 700 !important;
+    line-height: 31px !important;
+  }
+  .hero__description {
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .hero__join-button {
+    display: none !important;
+  }
+  .nav__search {
+    width: 100% !important;
   }
   .nav__search__input {
-    width: 100%; /* Поля поиска занимают всю ширину */
-    margin-bottom: 10px; /* Добавляем отступы между элементами */
+    width: 100% !important;
+    /* Поля поиска занимают всю ширину */
+    margin-bottom: 10px;
+    /* Добавляем отступы между элементами */
+  }
+  #nav__search__input {
+    display: none !important;
   }
   .nav__user-actions {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     margin-top: 10px;
   }
   .events__list {
-    flex-direction: column; /* Карточки событий отображаются вертикально */
+    flex-direction: column;
+    /* Карточки событий отображаются вертикально */
   }
   .event-card {
-    width: 100%; /* Карточки занимают всю ширину */
-    margin-bottom: 15px; /* Отступы между карточками */
+    width: 100%;
+    /* Карточки занимают всю ширину */
+    margin-bottom: 15px;
+    /* Отступы между карточками */
+  }
+  .events__head__right__link {
+    display: none !important;
+  }
+  .join {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: start !important;
+    padding: 20px 10px !important;
+  }
+  .join__title {
+    order: 1 !important;
+    text-align: start;
+  }
+  .join__image {
+    order: 2 !important;
+  }
+  .join__content {
+    order: 3 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .city__items {
+    gap: 10px !important;
+  }
+  .city__item {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .city__item p {
+    width: 100%;
+  }
+  .img-container-zoom img {
+    width: 170px !important;
+  }
+  .friendships__items {
+    flex-direction: column !important;
+  }
+  .friendships__item {
+    width: 100% !important;
   }
 }
 .nav {
@@ -104,6 +226,9 @@ button {
 .nav__part-right {
   display: flex;
   justify-content: flex-end;
+}
+.nav__logo__mobi {
+  display: none;
 }
 .nav__logo-link {
   margin-right: 40px;
@@ -163,6 +288,7 @@ button {
   align-items: center;
   color: #FFF;
   font-size: 14px;
+  white-space: nowrap;
 }
 .nav__user-actions a {
   display: flex;
@@ -175,6 +301,7 @@ button {
   font-weight: 500;
   line-height: 20px;
   text-decoration: none;
+  white-space: nowrap;
 }
 .nav__user-actions a--primary {
   background-color: #2ecc71;
@@ -360,7 +487,7 @@ button {
   background-color: #333;
   color: white;
   display: flex;
-  padding: 16px 196px 0px 196px;
+  padding: 16px;
   justify-content: center;
   align-items: center;
 }
@@ -414,8 +541,8 @@ button {
 .footer__container__links {
   display: flex;
   flex-direction: row;
-  gap: 240px;
-  justify-content: flex-start;
+  gap: 20px;
+  justify-content: space-around;
   align-items: flex-start;
 }
 .footer__container__social {
@@ -434,17 +561,25 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .footer__container__bottom {
   display: flex;
   flex-direction: row;
   padding-bottom: 40px;
   gap: 24px;
+  flex-wrap: wrap;
+  white-space: nowrap;
 }
 .footer__container__bottom-list {
   display: flex;
   flex-direction: row;
   gap: 24px;
+  flex-wrap: wrap;
+}
+
+.footer__links-title {
+  padding-bottom: 7px;
 }
 
 .another-info {
@@ -510,6 +645,7 @@ button {
   justify-content: center;
   align-items: center;
   gap: 6px;
+  flex-wrap: wrap;
 }
 .categories__item {
   padding: 22px 16px 16px 16px;
@@ -552,7 +688,8 @@ button {
 .city__items {
   display: flex;
   flex-direction: row;
-  gap: 42px;
+  flex-wrap: wrap;
+  gap: 37px;
 }
 .city__items a {
   text-decoration: none;
@@ -569,6 +706,9 @@ button {
   font-weight: 600;
   line-height: 28px;
 }
+.city__item img {
+  width: 100%;
+}
 
 .how {
   display: flex;
@@ -584,11 +724,12 @@ button {
   display: flex;
   flex-direction: row;
   gap: 32px;
+  flex-wrap: wrap;
 }
 .how__item {
   border-radius: 8px;
   background: rgba(151, 202, 209, 0.08);
-  padding: 32px 112px 24px 24px;
+  padding: 32px 86px 24px 24px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -636,31 +777,33 @@ button {
   display: flex;
   flex-direction: row;
   gap: 32px;
+  /* Для трех колонок с учетом отступов */
+  /* Минимальная ширина для мобильных устройств */
 }
 .friendships__item {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  width: 30%;
 }
 .friendships__item__title {
   color: #212121;
   font-size: 18px;
   font-weight: 600;
-  line-height: 28px; /* 155.556% */
+  line-height: 28px;
 }
 .friendships__item__description {
   color: #707070;
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
 }
 .friendships__item__link {
   color: #00798a;
-  font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
 }
 
 .select-container {
