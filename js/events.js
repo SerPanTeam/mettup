@@ -152,7 +152,13 @@ function apllyFilter() {
     newArray = filterArrByValue(newArray, 'distance', distance);
 
     setCity(city);
+    setCountEvent(newArray.length);
     showCardEvent(newArray, 'events__list');
+}
+
+function setCountEvent(len){
+    const counOfEven = document.querySelector(".events-container__left__subtitle");
+    counOfEven.innerHTML = "Events: " + len;
 }
 
 function filterArrByValue(arr, type, value) {
