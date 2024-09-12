@@ -23,6 +23,9 @@
         display: flex;
         flex-direction: row;
         gap: 42px;
+        a{
+            text-decoration: none;
+        }
     }
 
     &__item {

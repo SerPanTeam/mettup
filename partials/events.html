@@ -1,78 +1,38 @@
+<h1 class="events-container__left__title">Events near New York</h1>
+<h3 class="events-container__left__subtitle">Events</h3>
+
+<div class="events-container__left__filters">
+  <div class="select-container">
+    <select id="selectType" class="custom-select"></select>
+  </div>
+
+  <div class="select-container">
+    <select id="selectCategory" class="custom-select"></select>
+  </div>
+
+  <div class="select-container">
+    <select id="selectCity" class="custom-select"></select>
+  </div>
+
+  <div class="select-container">
+    <select id="selectDistance" class="custom-select"></select>
+  </div>
+
+  <div class="select-container">
+    <select id="selectDate" class="custom-select"></select>
+  </div>
+
+  <button id="resetFilters" class="join__button" onclick="resetFilters()">Reset filters</button>
+
+</div>
+
 <div class="events-container">
   <div class="events-container__left">
-    <h1 class="events-container__left__title">Events near New York, NY</h1>
-    <h3 class="events-container__left__subtitle">Events</h3>
-    <div class="events-container__left__filters">
-      <div class="select-container">
-        <select class="custom-select">
-          <option>Any type</option>
-          <option>Any distance</option>
-          <option>Any category</option>
-        </select>
-      </div>
-    </div>
-    <div class="events-container__left__results">
-      <div class="event-card-mini">
-        <div class="img"><img src="/assets/images/events/1.jpg" alt="" /></div>
-        <div class="content">
-          <div class="date">Wed, Mar 13 · 11:30 PM UTC</div>
-          <div class="title">
-            All Nations - Manhattan Missions Church Bible Study
-          </div>
-          <div class="category">Hobbies and Passions (25 km)</div>
-          <div class="attendees">99 attendees</div>
-        </div>
-      </div>
-    </div>
+    <div class="events__list" id="events__list"></div>
   </div>
   <div class="events-container__right">
-    <script>
-      function initMap() {
-        var location = { lat: 40.7128, lng: -74.006 }; // Координаты Нью-Йорка
-        var map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 10,
-          center: location,
-        });
-        var marker = new google.maps.Marker({
-          position: location,
-          map: map,
-        });
-      }
-    </script>
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJNzCI14dX78fpuu0g5OdubxfNBVXF8rk&callback=initMap"
-    ></script>
-
-    <div id="map" style="height: 450px; width: 100%"></div>
-
-    <script>
-      function initMap() {
-        var location = { lat: 40.7128, lng: -74.006 }; // Координаты Нью-Йорка
-        var map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 10,
-          center: location,
-        });
-        var marker = new google.maps.Marker({
-          position: location,
-          map: map,
-        });
-      }
-    </script>
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvqje2_bU9KKj8R9gRLKIJdioAWtzCH88&callback=initMap"
-    ></script>
-    <iframe
-      width="40%"
-      height="450"
-      style="border: 0"
-      loading="lazy"
-      allowfullscreen
-      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAvqje2_bU9KKj8R9gRLKIJdioAWtzCH88&q=New+York,NY"
-    >
+    <iframe id="googleMap" width="100%" height="450" style="border: 0" loading="lazy" allowfullscreen
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAvqje2_bU9KKj8R9gRLKIJdioAWtzCH88&q=New York">
     </iframe>
   </div>
 </div>

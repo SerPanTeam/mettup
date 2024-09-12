@@ -11,7 +11,7 @@
       </p>
       <button class="hero__join-button">Join Meetup</button>
     </div>
-    <div class="hero__right">
+    <div class="hero__right img-container-pulse">
       <img src="/assets/images/hero.svg" alt="Join Meetup" />
     </div>
   </section>
@@ -19,11 +19,7 @@
     <div class="events__head">
       <div class="events__head__left">
         <h2 class="events__title">Events near</h2>
-        <input
-          class="events__input-city"
-          type="text"
-          value="Mountain View, CA"
-        />
+        <input class="events__input-city" type="text" value="Mountain View, CA" />
       </div>
       <div class="events__head__right">
         <a class="events__head__right__link" href="/index.html?page=events">See all events</a>
@@ -55,7 +51,7 @@
         </p>
         <button class="join__button">Sign up</button>
       </div>
-      <div class="join__image">
+      <div class="join__image img-container-pulse">
         <img src="/assets/images/join.png" alt="Join Meetup" />
       </div>
     </section>
@@ -63,34 +59,49 @@
     <section class="categories">
       <div class="categories__title">Explore top categories</div>
       <div class="categories__items">
-        <div class="categories__item">
-          <img src="/assets/icons/cats/travel_and_outdoor.svg.svg" alt="" />
-          <p>Travel and Outdoor</p>
-        </div>
-        <div class="categories__item">
-          <img src="/assets/icons/cats/social_activities.svg.svg" alt="" />
-          <p>Social Activities</p>
-        </div>
-        <div class="categories__item">
-          <img src="/assets/icons/cats/hobbies_and_passions.svg.svg" alt="" />
-          <p>Hobbies and Passions</p>
-        </div>
-        <div class="categories__item">
-          <img src="/assets/icons/cats/sports_and_fitness.svg.svg" alt="" />
-          <p>Sports and Fitness</p>
-        </div>
-        <div class="categories__item">
-          <img src="/assets/icons/cats/technology.svg.svg" alt="" />
-          <p>Technology</p>
-        </div>
-        <div class="categories__item">
-          <img src="/assets/icons/cats/art_and_culture.svg.svg" alt="" />
-          <p>Art and Culture</p>
-        </div>
-        <div class="categories__item">
-          <img src="/assets/icons/cats/games.svg.svg" alt="" />
-          <p>Games</p>
-        </div>
+        <a href="/index.html?page=events&category=Travel and Outdoor">
+          <div class="categories__item">
+            <img src="/assets/icons/cats/travel_and_outdoor.svg.svg" alt="" />
+            <p>Travel and Outdoor</p>
+          </div>
+        </a>
+        <a href="/index.html?page=events&category=Social Activities">
+          <div class="categories__item">
+            <img src="/assets/icons/cats/social_activities.svg.svg" alt="" />
+            <p>Social Activities</p>
+          </div>
+        </a>
+        <a href="/index.html?page=events&category=Hobbies and Passions">
+          <div class="categories__item">
+            <img src="/assets/icons/cats/hobbies_and_passions.svg.svg" alt="" />
+            <p>Hobbies and Passions</p>
+          </div>
+        </a>
+        <a href="/index.html?page=events&category=Sports and Fitness">
+          <div class="categories__item">
+            <img src="/assets/icons/cats/sports_and_fitness.svg.svg" alt="" />
+            <p>Sports and Fitness</p>
+          </div>
+        </a>
+        <a href="/index.html?page=events&category=Technology">
+          <div class="categories__item">
+            <img src="/assets/icons/cats/technology.svg.svg" alt="" />
+            <p>Technology</p>
+          </div>
+        </a>
+        <a href="/index.html?page=events&category=Art and Culture">
+          <div class="categories__item">
+            <img src="/assets/icons/cats/art_and_culture.svg.svg" alt="" />
+            <p>Art and Culture</p>
+          </div>
+        </a>
+        <a href="/index.html?page=events&category=Games">
+          <div class="categories__item">
+            <img src="/assets/icons/cats/games.svg.svg" alt="" />
+            <p>Games</p>
+          </div>
+        </a>
+
       </div>
     </section>
     <section class="city">
@@ -100,30 +111,43 @@
         planning in cities around the country.
       </div>
       <div class="city__items">
-        <div class="city__item">
-          <img src="/assets/images/cities/new_york.png" alt="New York" />
-          <p class="">New York</p>
-        </div>
-        <div class="city__item">
-          <img
-            src="/assets/images/cities/san_francisco.png"
-            alt="San Francisco"
-          />
-          <p>San Francisco</p>
-        </div>
-        <div class="city__item">
-          <img src="/assets/images/cities/chicago.png" alt="Chicago" />
-          <p>Chicago</p>
-        </div>
-        <div class="city__item">
-          <img src="/assets/images/cities/nashville.png" alt="Nashville" />
-          <p>Nashville</p>
-        </div>
-        <div class="city__item">
-          <img src="/assets/images/cities/miami.png" alt="Miami" />
-          <p>Miami</p>
-        </div>
+
+        <a href="/index.html?page=events&city=New York">
+          <div class="city__item img-container-zoom">
+            <img src="/assets/images/cities/new_york.png" alt="New York" />
+            <p class="">New York</p>
+          </div>
+        </a>
+
+        <a href="/index.html?page=events&city=San Francisco">
+          <div class="city__item img-container-zoom">
+            <img src="/assets/images/cities/san_francisco.png" alt="San Francisco" />
+            <p>San Francisco</p>
+          </div>
+        </a>
+
+        <a href="/index.html?page=events&city=Chicago">
+          <div class="city__item img-container-zoom">
+            <img src="/assets/images/cities/chicago.png" alt="Chicago" />
+            <p>Chicago</p>
+          </div>
+        </a>
+
+        <a href="/index.html?page=events&city=Nashville">
+          <div class="city__item img-container-zoom">
+            <img src="/assets/images/cities/nashville.png" alt="Nashville" />
+            <p>Nashville</p>
+          </div>
+        </a>
+
+        <a href="/index.html?page=events&city=Miami">
+          <div class="city__item img-container-zoom">
+            <img src="/assets/images/cities/miami.png" alt="Miami" />
+            <p>Miami</p>
+          </div>
+        </a>
       </div>
+
     </section>
     <section class="how">
       <div class="how__title">How Meetup works</div>
@@ -164,6 +188,7 @@
         shared interests. Learn how.
       </div>
       <div class="friendships__items">
+
         <div class="friendships__item">
           <img src="/assets/images/article/first_article.png" alt="" />
           <div class="friendships__item__title">
@@ -201,6 +226,7 @@
           </div>
           <div class="friendships__item__link">Read more</div>
         </div>
+
       </div>
     </section>
   </section>

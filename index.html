@@ -26,6 +26,15 @@
       const pageParam = urlParams.get("page");
       if (pageParam === "events") {
         loadPart("events", "main").then(() => {
+          setCity(getCityFromGetParam());
+          setOptinonsByName('city', "selectCity");
+          setOptinonsByName('type', "selectType");
+          setOptinonsByName('category', "selectCategory");
+          setOptinonsByName('distance', "selectDistance");
+          setOptinonsByName('shortDate', "selectDate", "date");
+
+          //showActualEvents("events__list");
+          apllyFilter();
         });        
       } else {
         loadPart("main").then(() => {
