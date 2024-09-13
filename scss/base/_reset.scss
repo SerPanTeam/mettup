@@ -9,3 +9,13 @@
   a{
     text-decoration: none;
   }
+
+  a {
+    color: #000; /* Задайте нужный цвет для ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+  }
+  
+  a:visited, a:hover, a:active {
+    color: #000; /* Фиксируем цвет для всех состояний */
+    text-decoration: none; /* Отключаем подчеркивание для всех состояний */
+  }

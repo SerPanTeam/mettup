@@ -1,10 +1,13 @@
 
 function showCardEvent(objEvents, container) {
     // console.log(objEvents);
+    //<a href="/index.html?page=event&title="></a>
     let templCardEvent = '';
     objEvents.forEach(val => {
         templCardEvent +=
-            `<div class="event-card">
+            `
+            <a href="/index.html?page=event&title=${val.title}">
+            <div class="event-card">
                 <div class="img-container-3d">
                 <img class="event-card__img" src="${val.image}" alt="">
                 </div>
@@ -15,7 +18,9 @@ function showCardEvent(objEvents, container) {
                     <span>${val.attendees} going</span>
                     <span>Free</span>
                 </div>
-            </div>`
+            </div>
+            </a>
+            `
     });
     const parContainer = document.querySelector(`#${container}`);
     parContainer.innerHTML = templCardEvent;

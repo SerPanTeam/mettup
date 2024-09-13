@@ -62,7 +62,13 @@ button {
   }
 
   .events-container {
-    flex-direction: column-reverse;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #googleMap{
+    display: none !important;
   }
 }
 

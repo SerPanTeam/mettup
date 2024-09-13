@@ -1,55 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <script src="/js/load-partials.js"></script>
-    <script src="/js/data.js"></script>
-    <script src="/js/events.js"></script>
-    <title>
-      Meetup. The people platform—Where interests become friendships
-    </title>
-  </head>
 
-  <body>
-    <!-- Навигация --><!-- Navigation -->
-    <header class="header" id="header"></header>
-    <script>
-      loadPart("header");
-    </script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <script src="/js/load-partials.js"></script>
+  <script src="/js/data.js"></script>
+  <script src="/js/events.js"></script>
+  <title>
+    Meetup. The people platform—Where interests become friendships
+  </title>
+</head>
 
-    <!-- Основной контент --><!-- Hauptinhalt -->
-    <main class="main" id="main"></main>
-    <script>
-      const urlParams = new URLSearchParams(window.location.search);
-      const pageParam = urlParams.get("page");
-      if (pageParam === "events") {
-        loadPart("events", "main").then(() => {
-          setCity(getCityFromGetParam());
-          setOptinonsByName('city', "selectCity");
-          setOptinonsByName('type', "selectType");
-          setOptinonsByName('category', "selectCategory");
-          setOptinonsByName('distance', "selectDistance");
-          setOptinonsByName('shortDate', "selectDate", "date");
+<body>
+  <!-- Навигация --><!-- Navigation -->
+  <header class="header" id="header"></header>
+  <script>
+    loadPart("header");
+  </script>
 
-          //showActualEvents("events__list");
-          apllyFilter();
-        });        
+  <!-- Основной контент --><!-- Hauptinhalt -->
+  <main class="main" id="main"></main>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const pageParam = urlParams.get("page");
+    if (pageParam === "events") {
+      loadPart("events", "main").then(() => {
+        setCity(getCityFromGetParam());
+        setOptinonsByName('city', "selectCity");
+        setOptinonsByName('type', "selectType");
+        setOptinonsByName('category', "selectCategory");
+        setOptinonsByName('distance', "selectDistance");
+        setOptinonsByName('shortDate', "selectDate", "date");
+
+        //showActualEvents("events__list");
+        apllyFilter();
+      });
+    }
+      if (pageParam === "event") {
+        loadPart("event", "main").then(() => {
+          const titleParam = urlParams.get("title");
+          console.log(encodeURIComponent(titleParam));
+          showCardEvent(eventsStore.filter(val => val.title == decodeURIComponent(titleParam)), 'events__list');
+          document.querySelector(".event-container__title").innerHTML = decodeURIComponent(titleParam);
+          document.querySelector(".event-container__subtitle").innerHTML = eventsStore.filter(val => val.title == decodeURIComponent(titleParam))[0].shortDate;
+          //console.log(eventsStore.filter(val => val.title == decodeURIComponent(titleParam))[0].shortDate);
+
+          
+        });
       } else {
         loadPart("main").then(() => {
           showActualEvents("events__list");
           showActualEventsOnline("events__list__online");
         });
       }
-    </script>
+  </script>
 
-    <!-- Футер --><!-- Fußzeile -->
-    <footer class="footer" id="footer"></footer>
-    <script>
+  <!-- Футер --><!-- Fußzeile -->
+  <footer class="footer" id="footer"></footer>
+  <script>
       loadPart("footer");
-    </script>
+  </script>
 
-    <!-- <script src="./js/main.js"></script> -->
-  </body>
+  <!-- <script src="./js/main.js"></script> -->
+</body>
+
 </html>

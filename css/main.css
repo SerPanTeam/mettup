@@ -10,6 +10,16 @@ a {
   text-decoration: none;
 }
 
+a {
+  color: #000; /* Задайте нужный цвет для ссылок */
+  text-decoration: none; /* Убираем подчеркивание */
+}
+
+a:visited, a:hover, a:active {
+  color: #000; /* Фиксируем цвет для всех состояний */
+  text-decoration: none; /* Отключаем подчеркивание для всех состояний */
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #FFF;
@@ -66,7 +76,12 @@ button {
     width: 150px !important;
   }
   .events-container {
-    flex-direction: column-reverse;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+  #googleMap {
+    display: none !important;
   }
 }
 @media (max-width: 767px) {
@@ -241,9 +256,6 @@ button {
   background-repeat: no-repeat;
   background-position: 10px center;
 }
-.nav__search__input:nth-child(1)::-moz-placeholder {
-  color: #707070;
-}
 .nav__search__input:nth-child(1)::placeholder {
   color: #707070;
 }
@@ -401,8 +413,7 @@ button {
   width: 100%;
   height: 192px !important;
   /* Задаем фиксированную высоту */
-  -o-object-fit: cover !important;
-     object-fit: cover !important;
+  object-fit: cover !important;
   /* Изображение будет обрезано, чтобы сохранить пропорции */
   border-radius: 8px;
 }
@@ -591,6 +602,7 @@ button {
   font-size: 28px;
   font-weight: 600;
   line-height: 36px;
+  text-wrap: nowrap;
 }
 .join__description {
   color: #212121;
@@ -852,6 +864,7 @@ select option {
   flex-direction: row;
   gap: 10px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .events-container__right {
   width: 30%;
@@ -862,6 +875,10 @@ select option {
   font-style: normal;
   font-weight: 500;
   line-height: 28px;
+}
+
+#resetFilters {
+  width: 145px;
 }
 
 .img-container-zoom {
