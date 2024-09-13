@@ -11,19 +11,14 @@ button {
 .container {
   width: 100%;
   max-width: 1440px;
-  /* Максимальная ширина контента */
   margin: 0 auto;
   padding: 0 10px;
 }
 
-/* Стили для основного контента */
 .main {
   max-width: 1196px;
-  /* Ширина основного контента */
   margin: 0 auto;
-  /* Центрирование */
   padding: 0 0px;
-  /* Отступы */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -31,34 +26,25 @@ button {
   justify-content: flex-start;
 }
 
-/* Медиазапросы для больших экранов (от 1920px) */
 @media (min-width: 1920px) {
   .container {
     max-width: 1920px;
-    /* Контейнер расширяется для больших экранов */
-    // padding: 0 15px;
-
   }
 }
 
-/* Медиазапросы для планшетов (от 768px до 1024px) */
 @media (max-width: 1024px) {
   .container {
     max-width: 100%;
-    /* Контейнер занимает всю ширину */
     padding: 0 15px;
-    /* Отступы */
   }
 
   .main {
     max-width: 100%;
-    /* Основной контент растягивается на всю ширину */
     padding: 0 15px;
   }
 
   .nav__search__input {
     width: 200px !important;
-    /* Поля поиска становятся шире */
   }
 
   .nav {
@@ -67,35 +53,33 @@ button {
 
   .nav__search__input:nth-child(2) {
     width: 200px;
-    /* Поля поиска становятся шире */
   }
 }
 
 @media (max-width: 850px) {
   .nav__search__input {
     width: 150px !important;
-    /* Поля поиска становятся шире */
+  }
+
+  .events-container {
+    flex-direction: column-reverse;
   }
 }
 
-/* Медиазапросы для мобильных устройств (до 767px) */
+
 @media (max-width: 767px) {
   .container {
     max-width: 100%;
     padding: 0 10px;
-    /* Уменьшаем отступы для мобильных */
   }
 
   .main {
     max-width: 100%;
-    /* Основной контент занимает всю ширину */
     padding: 0 10px;
   }
 
-  /* Адаптация навигации */
   .nav {
     flex-direction: column-reverse !important;
-    /* Навигация становится вертикальной */
     align-items: flex-end !important;
     gap: 16px !important;
   }
@@ -157,9 +141,7 @@ button {
 
   .nav__search__input {
     width: 100% !important;
-    /* Поля поиска занимают всю ширину */
     margin-bottom: 10px;
-    /* Добавляем отступы между элементами */
   }
 
   #nav__search__input {
@@ -174,14 +156,11 @@ button {
 
   .events__list {
     flex-direction: column;
-    /* Карточки событий отображаются вертикально */
   }
 
   .event-card {
     width: 100%;
-    /* Карточки занимают всю ширину */
     margin-bottom: 15px;
-    /* Отступы между карточками */
   }
 
   .events__head__right__link {
@@ -221,15 +200,14 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // flex-basis: calc(50% - 32px);
 
     p {
       width: 100%;
     }
 
-    img {
-      // width: 40% !important;
-    }
+    // img {
+    //   // width: 40% !important;
+    // }
   }
 
   .img-container-zoom img {

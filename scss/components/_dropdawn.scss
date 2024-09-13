@@ -1,49 +1,48 @@
 .select-container {
-    position: relative;
-    display: inline-block;
-    width: 200px; /* Можно настроить ширину под себя */
-    border-radius: 50px; /* Скругление контейнера */
-    overflow: hidden; /* Скрытие элементов за пределами контейнера */
-  }
-  
-.custom-select {
-    width: 100%;
-    padding: 10px 40px 10px 20px; /* Добавил отступ справа для стрелки */
-    border: 1px solid #ccc;
-    border-radius: 50px;
-    appearance: none; /* Отключаем стандартное оформление браузера */
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-color: #f8f8f8;
-    font-size: 16px;
-    font-weight: 500;
-    z-index: 1; /* Чтобы иконка оставалась сверху */
-    position: relative;
-    cursor: pointer; /* Курсор при наведении */
+  position: relative;
+  display: inline-block;
+  width: 200px; /* Можно настроить ширину под себя */
+  border-radius: 50px; /* Скругление контейнера */
+  overflow: hidden; /* Скрытие элементов за пределами контейнера */
+}
 
+.custom-select {
+  width: 100%;
+  padding: 10px 40px 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  font-weight: 500;
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
 }
 
 .custom-select:focus {
-    outline: none;
-    border-color: #000; /* Цвет границы при фокусе */
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3); /* Небольшая тень при фокусе */
+  outline: none;
+  border-color: #000;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
 }
 
 .select-container::after {
-    content: url('/assets/icons/dropdown.svg'); /* Путь к вашей SVG-иконке */
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%);
-    pointer-events: none; /* Чтобы иконка не блокировала клик по селекту */
-    z-index: 2;
-    width: 12px; /* Добавил размеры */
-    height: 12px; /* Добавил размеры */
+  content: url("/assets/icons/dropdown.svg");
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 2;
+  width: 12px;
+  height: 12px;
 }
 
 select option {
-    padding: 10px; /* Отступы внутри выпадающего списка */
-    background-color: #fff; /* Фоновый цвет опций */
-    color: #333; /* Цвет текста */
-    font-weight: 500;
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+  font-weight: 500;
 }
